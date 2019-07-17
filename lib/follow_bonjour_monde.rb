@@ -22,12 +22,11 @@ end
 def follow(client)
 	
 
-	client.search("#bonjour_monde", result_type: "recent").take(5).each do |tweet|
-		
+	client.search("#bonjour_monde", result_type: "recent").take(5).each do |tweet|	
 	client.follow(tweet.user)
 	end
 
-	binding.pry
+	#binding.pry
 end
 
 
